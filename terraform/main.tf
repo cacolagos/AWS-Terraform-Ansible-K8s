@@ -84,7 +84,7 @@ resource "aws_instance" "my-machine" {
 
   # All four instances will have the same ami and instance_type
   ami           = lookup(var.ec2_ami, var.region)
-  key_name = "devops"
+  key_name = "Devops"
   instance_type = var.instance_type # 
   vpc_security_group_ids = [aws_security_group.devops_sg.id]
   tags = {
